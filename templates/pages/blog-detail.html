@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<main>
+    <!-- Start Hero section -->
+    <section class="about-hero-section blog-hero-section ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="text-white mb-10">{{ post.title }}</h1>
+                <div class="title-border"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start Single Blog Section -->
+    <section class="single-blog-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-12 p-0"></div>
+                <div class="col-md-8 col-12 single-blog-wrap ps-0 pe-0">
+                    <!-- <img src="{% static 'img/apartment-renovation-blog.jpg' %}" alt="apartment-renovation-blog"> -->
+                    <img src="{{ post.photo_main.url }}" alt="apartment-renovation-blog">
+                    <div class="d-flex pt-10 pb-10 flex-column flex-md-row">
+                        <div class="col-lg-6 col-md-8 col-12 d-flex justify-content-center justify-content-md-start">
+                            <div class="pe-3 single-calendar">
+                                <i class="fa-solid fa-calendar"></i>
+                                <small>
+                                    {{ post.created_on.date }}
+                                </small>
+                            </div>
+                            <!-- <div class="single-calendar">
+                                <i class="fa-solid fa-comment"></i>
+                                <span>No Comments</span>
+                            </div> -->
+                        </div>
+                        <!-- <div
+                            class="col-lg-6 col-md-4 col-12 single-social-icon text-end d-flex justify-content-md-end justify-content-center pt-3 pt-md-0">
+                            <a href="#!">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <!-- <p style="white-space: pre">{{ post.body | linebreaks }}</p>     -->
+                    <div>
+                        <h3 class="blog-heading-3">{{ post.heading1 }}</h3>
+                        <p>{{ post.para1 | linebreaks }}</p>
+                        <h3 class="blog-heading-3">{{ post.heading2 }}</h3>
+                        <p>{{ post.para2 | linebreaks }}</p>
+                        <h3 class="blog-heading-3">{{ post.heading3 }}</h3>
+                        <p>{{ post.para3 | linebreaks }}</p>
+                        <h3 class="blog-heading-3">{{ post.heading4 }}</h3>
+                        <p>{{ post.para4 | linebreaks }}</p>
+                        <h3 class="blog-heading-3">{{ post.heading5 }}</h3>
+                        <p>{{ post.para5 | linebreaks }}</p>
+                        <h3 class="blog-heading-3">{{ post.heading6 }}</h3>
+                        <p>{{ post.para6 | linebreaks }}</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-12 p-0"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Single Blog Section -->
+</main>
+
+<!-- {% block page_title %}
+    <h2>{{ post.title }}</h2>
+{% endblock page_title %}
+
+{% block page_content %}
+    <small>
+        {{ post.created_on.date }} | Categories:
+        {% for category in post.categories.all %}
+            <a href="{% url 'blog_category' category.name %}">
+                {{ category.name }}
+            </a>
+        {% endfor %}
+    </small>
+    <p>{{ post.body | linebreaks }}</p>
+    <h3>Leave a comment:</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            {{ form.author }}
+        </div>
+        <div>
+            {{ form.body }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h3>Comments:</h3>
+    {% for comment in comments %}
+        <p>
+            On {{ comment.created_on.date }} <b>{{ comment.author }}</b> wrote:
+        </p>
+        <p>
+            {{ comment.body | linebreaks }}
+        </p>
+        {% endfor %}
+
+{% endblock page_content %} -->
+
+
+
+{% endblock content %}

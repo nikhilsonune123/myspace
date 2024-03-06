@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+    <!-- Start Hero section -->
+    <section class="about-hero-section blog-hero-section ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="text-white mb-10">Blogs</h1>
+                <div class="title-border"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start Blog Section -->
+    <section class="blog-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="blog-wrap ps-0 pe-0 d-flex flex-md-row flex-wrap">
+                    {% block posts %}
+                    {% for post in posts %}
+                    <div class="col-md-4 col-12 ps-md-2 pe-md-2 ps-0 pe-0">
+                        <div class="card align-content-center">
+                            <!-- <img src="{% static 'img/apartment-renovation-blog.jpg' %}"
+                                class="card-img-top mb-20 rounded-0" alt="apartment-renovation-blog"> -->
+                            <img src="{{post.photo_main.url}}"
+                                class="card-img-top mb-20 rounded-0" alt="apartment-renovation-blog">
+                            <div class="card-body p-0">
+                                <h4 class="card-title">
+                                    <a href="{% url 'blog_detail' post.pk %}" style="color: #333;">
+                                        {{ post.title }} 
+                                    </a>
+                                </h4>
+                                <small style="font-size: 12px">
+                                    {{ post.created_on.date }}
+                                </small>
+                                <p class="card-text mb-3">{{ post.para1 | slice:":150" }}...
+                                </p>
+                                <a href="{% url 'blog_detail' post.pk %}" style="color: #333;">Read More</a>
+                                <!-- <a href="single-blog.html" class="btn-primary blog-btn">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endblock posts %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Section -->
+</main>
+
+{% endblock content %}

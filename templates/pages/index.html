@@ -1,0 +1,746 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<main>
+    <!-- Start Hero section -->
+    <section class="hero-section ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row flex-md-row flex-column-reverse">
+                <div
+                    class="hero-content col-md-6 col-12 ps-0 pe-0 ps-md-2 pe-md-2 d-flex flex-column justify-content-center align-items-start">
+                    <h5 class="mb-3 wow slideInLeft color-primary">_Welcome to MySpace Interiors_</h5>
+                    <h1 class="mb-3 wow slideInLeft">
+                        <span class="color-primary font-54">CRAFTING</span><br>
+                        <span class="color-secondary font-54">Interior Spaces</span><br>
+                        <span class="color-primary font-54">BRINGING TO LIFE</span><br>
+                        <span class="color-secondary font-54">Dream Interiors </span>
+
+                    </h1>
+                    <p class="wow slideInLeft color-secondary">Experience the fusion of artistry and functionality in
+                        interior design with MySpace Interiors —a trusted name for quality and timeless perfection.
+                        .</p>
+                    <a href="portfolio" class="btn mt-30 wow slideInLeft">Discover Work</a>
+                </div>
+                <div class="hero-image col-md-6 col-12 ps-0 pe-0 ps-md-2 pt-md-0 pe-md-2 text-start wow slideInRight">
+                    <img src="{% static 'img/other/1.png' %}" alt="hero-section-image" class="hero-section-image">
+                    <!-- <div class="emoji-wrap">
+                   <img src="{% static 'img/Emoji.png' %}" alt="Emoji">
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start About Us Section -->
+    <section class="about-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="about-img col-md-6 col-12 ps-0 pe-0 ps-md-3 pe-md-3 text-center">
+                    <img src="{% static 'img/modular-living/7.png' %}" width="100%" alt="exterior-design"
+                        class="exterior-design wow slideInLeft">
+                    <div class="text-end wow slideInLeft">
+                        <img src="{% static 'img/other/3.png' %}" alt="fantastic-lnterior" class="fantastic-lnterior">
+                    </div>
+                </div>
+                <div
+                    class="about-content col-md-6 col-12 ps-0 pe-0 ps-md-3 pe-md-3 d-flex flex-column align-items-start justify-content-center">
+                    <h6 class="mb-3">[ About Company ]</h6>
+                    <h2 class="mb-3 color-secondary ">Leading Solutions from Skilled Architects & Interior Designers
+                    </h2>
+                    <span class="about-divider"></span>
+                    <p class="color-secondary">We specialize in elevating your space with a fusion of creative design
+                        and
+                        functional elegance: MySpace Interiors crafts interiors, achieving timeless excellence that
+                        seamlessly integrates innovation and practicality for a distinctive, stylish, and inviting
+                        atmosphere.
+                    </p>
+                    <a href="about" class="btn mt-30">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- Start Portfolio Section -->
+    <section class="container">
+        <section class="mt-10">
+            <strong class="mb-10 color-secondary">Modular Kitchen Design</strong>
+            <section class="portfolio-section d-flex flex-wrap">
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-3 ">
+                        <a href="{% static 'img/modular-kitchen/1.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-kitchen/1.png' %}" alt="portfolio-exterior-design">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-0 pe-xl-3 ">
+                        <a href="{% static 'img/modular-kitchen/2.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-kitchen/2.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-3 pt-3 pt-xl-0">
+                        <a href="{% static 'img/modular-kitchen/3.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-kitchen/3.png' %}" alt="modern-furniture">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pt-3 pt-xl-0">
+                        <a href="{% static 'img/modular-kitchen/4.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-kitchen/4.png' %}" alt="choose-your-dream" class="p-0">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="mt-10">
+            <strong class="mb-10 color-secondary">Modular Living Room</strong>
+            <section class="portfolio-section d-flex flex-wrap">
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-3 ">
+                        <a href="{% static 'img/modular-living/6.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-living/6.png' %}" alt="portfolio-exterior-design">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-0 pe-xl-3 ">
+                        <a href="{% static 'img/modular-living/7.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-living/7.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-3 pt-3 pt-xl-0">
+                        <a href="{% static 'img/modular-living/8.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-living/8.png' %}" alt="modern-furniture">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pt-3 pt-xl-0">
+                        <a href="{% static 'img/modular-living/9.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-living/9.png' %}" alt="choose-your-dream" class="p-0">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="mt-10">
+            <strong class="mb-10 color-secondary">Modular Workspace</strong>
+            <section class="portfolio-section d-flex flex-wrap">
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-3 ">
+                        <a href="{% static 'img/modular-workspace/10.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-workspace/10.png' %}" alt="portfolio-exterior-design">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-0 pe-xl-3 ">
+                        <a href="{% static 'img/modular-workspace/11.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-workspace/11.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pe-3 pt-3 pt-xl-0">
+                        <a href="{% static 'img/modular-workspace/12.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-workspace/12.png' %}" alt="modern-furniture">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-xl-3 col-6">
+                    <div class="popup pt-3 pt-xl-0">
+                        <a href="{% static 'img/modular-workspace/13.png' %}" data-fancybox="gallery">
+                            <span> </span>
+                            <img src="{% static 'img/modular-workspace/13.png' %}" alt="choose-your-dream" class="p-0">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- Start Skill Section -->
+    <section class="skill-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row flex-md-row flex-column-reverse">
+                <div
+                    class="skill-content col-md-6 col-12 d-flex justify-content-center flex-column pt-5 pt-md-0 ps-0 pe-0 ps-md-3 pe-md-3">
+                    <h6 class="mb-3">[ Our Expertise ]</h6>
+                    <h2 class="mb-3 color-secondary">The Core Company Values</h2>
+                    <span class="about-divider"></span>
+                    <p>The Foundation of Company Values At MySpace Interiors, we excel in inventive solutions and
+                        steadfast integrity, guaranteeing dedication to excellence and client contentment with each
+                        interior metamorphosis.</p>
+                    <div class="pt-3">
+                        <div class="progress-bar-wrap">
+                            <h6 class="text-start text-black"> Space Planning </h6>
+                            <div class="animated-progress progress-blue">
+                                <span data-progress="90"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-wrap">
+                            <h6 class="text-start text-black"> Furniture Selection </h6>
+                            <div class="animated-progress progress-blue">
+                                <span data-progress="75"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-wrap">
+                            <h6 class="text-start text-black"> Custom Design Solutions </h6>
+                            <div class="animated-progress progress-blue">
+                                <span data-progress="85"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="skill-image col-md-6 col-12 text-center d-flex align-items-center justify-content-center ps-0 pe-0 ps-md-3 pe-md-3 wow slideInRight">
+                    <img src="{% static 'img/other/2.png' %}" alt="our-skill">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skill Section -->
+
+    <!-- Start Services Section -->
+    <section class="services-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h6 class="mb-3 text-center wow slideInLeft"></h6>
+                <h2 class="text-center mb-3 wow slideInRight color-primary">Tailored Approach</h2>
+                <p class="text-center color-secondary mb-20">Elevate Your Space, Redefine Your Style: Where Creativity
+                    Meets Comfort in Every Interior Detail.</p>
+                <span class="about-divider"></span>
+                <div class="section-box d-flex flex-wrap justify-content-center pt-40 ps-0 pe-0">
+
+                    <div class="col-lg-4 col-md-6 col-12 pe-0 ps-md-3 pe-md-3 wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="card bg-self-primary">
+                            <div class="card-title-wrap d-flex align-items-center service-icon">
+                                <i class="fa-solid fa-pen-ruler m-0"></i>
+                            </div>
+                            <div class="card-body mt-20 p-0">
+                                <h4 class="mb-3 text-center color-white">Lighting Design</h4>
+                                <span class="card-divider mb-3"></span>
+                                <div class="card-list d-flex flex-column">
+                                    <span class="color-white text-center">
+                                        Illuminate your spaces with our bespoke lighting design service, where ambiance
+                                        meets
+                                        innovation. From elegant fixtures to curated lighting plans, we craft brilliance
+                                        tailored to enhance every corner of your environment.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 pe-0 ps-md-3 pe-md-3 wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="card bg-self-white">
+                            <div class="card-title-wrap d-flex align-items-center service-icon color-primary">
+                                <i class="fa-solid fa-lightbulb m-0 "></i>
+                            </div>
+                            <div class="card-body mt-20 p-0">
+                                <h4 class="mb-3 text-center color-primary">Custom Solutions</h4>
+                                <span class="card-divider mb-3"></span>
+                                <div class="card-list d-flex flex-column">
+                                    <span class="color-primary text-center">
+                                        Tailor your space to perfection with our custom solutions service, where unique
+                                        designs
+                                        meet your distinct preferences. From personalized furnishings to bespoke decor,
+                                        we
+                                        bring your vision to life with unparalleled craftsmanship.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 pe-0 ps-md-3 pe-md-3 wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="card bg-self-primary">
+                            <div class="card-title-wrap d-flex align-items-center service-icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="card-body mt-20 p-0">
+                                <h4 class="mb-3 text-center color-white">Project Planning</h4>
+                                <span class="card-divider mb-3"></span>
+                                <div class="card-list d-flex flex-column">
+                                    <span class="color-white text-center">
+                                        Empower your vision with our meticulous project planning service, where
+                                        precision meets
+                                        creativity. From concept to execution, we navigate every detail to ensure your
+                                        project
+                                        unfolds seamlessly and exceeds expectations.</span>
+                                </div>
+                            </div>
+                            <!-- <div class="btn-center">
+                         <a href="services.html" class="btn">View All</a>
+                      </div> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center pt-50 ps-0 pe-0">
+                    <a href="services" class="btn">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start Counter Section -->
+    <section class="counter-section pt-80 pb-80 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6 text-center ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".1s">
+                    <div class="counter-section-text text-white d-flex align-items-center  justify-content-center  ">
+                        <h2 class="count d-block" data-number="100"></h2>
+                        <span>+</span>
+                    </div>
+                    <h5 class="text-white mb-0">Happy Client</h5>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6 text-center ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="counter-section-text text-white d-flex align-items-center  justify-content-center  ">
+                        <h2 class="count d-block" data-number="8"></h2>
+                        <span>+</span>
+                    </div>
+                    <h5 class="text-white mb-0">Year Of Experience</h5>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6 text-center pt-3 pt-lg-0 ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="counter-section-text text-white d-flex align-items-center  justify-content-center  ">
+                        <h2 class="count d-block" data-number="80"></h2>
+                        <span>+</span>
+                    </div>
+                    <h5 class="text-white mb-0">Successful Project</h5>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6 text-center pt-3 pt-lg-0 ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="counter-section-text text-white d-flex align-items-center  justify-content-center  ">
+                        <h2 class="count d-block" data-number="15"></h2>
+                        <span>+</span>
+                    </div>
+                    <h5 class="text-white mb-0">Award Achievement</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Counter Section -->
+    <!-- Start Process Section -->
+    <!-- <section class="process-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+       <div class="container">
+          <div class="row justify-content-center">
+             <h6 class="mb-3 text-center wow slideInLeft">[ Process ]</h6>
+             <h2 class="text-center mb-3 wow slideInRight">Smart Planing of Work Process</h2>
+             <span class="about-divider"></span>
+             <div class="process-box pt-40 ps-0 pe-0 d-flex flex-wrap justify-content-center">
+                <div
+                   class="process-box-wrap col-lg-4 col-md-6 ps-0 pe-0 ps-md-3 pe-md-3 text-center  d-flex align-items-center flex-column  wow slideInLeft">
+                   <h2 class="mb-10">01</h2>
+                   <h3 class="mb-10">Conceptual</h3>
+                   <p>Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui nunc mattis enim ut tellus
+                      elementum sagittis vitae.</p>
+                </div>
+                <div
+                   class="process-box-wrap col-lg-4 col-md-6 ps-0 pe-0 ps-md-3 pe-md-3 text-center pt-3 pt-md-0  d-flex align-items-center flex-column wow slideInUp">
+                   <h2 class="mb-10">02</h2>
+                   <h3 class="mb-10">Schematic</h3>
+                   <p>Amet massa vitae tortor condimentum lacinia. Quis commodo odio aenean sed adipiscing diam rnare
+                      arcu odio</p>
+                </div>
+                <div
+                   class="process-box-wrap col-lg-4 col-md-6 ps-0 pe-0 ps-md-3 pe-md-3 pt-3 pt-md-3  pt-lg-0 text-center  d-flex align-items-center flex-column wow slideInRight">
+                   <h2 class="mb-10">03</h2>
+                   <h3 class="mb-10">Development</h3>
+                   <p>Quam vulputate dignissim suspendisse in est habitasse platea dictumst quisque sagittis sem
+                      viverra aliquet eget sit</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section> -->
+    <!-- End Process Section -->
+
+    <!-- start Our Professional Section -->
+    <!-- <section class="professional-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+       <div class="container">
+          <div class="row justify-content-center">
+             <h6 class="mb-3 text-center ">[ Our Professional ]</h6>
+             <h2 class="text-center mb-3 color-secondary">Meet Our Skilled Team</h2>
+             <span class="about-divider"></span>
+             <div class="row professional-box pt-40 ps-0 pe-0">
+                <div class="col-12 col-lg-3 col-md-6  ps-0 pe-0 ps-md-2 pe-md-2  wow slideInUp" data-wow-duration="1s"
+                   data-wow-delay=".1s">
+                   <div class="professional-box-wrap">
+                      <img src="{% static 'img/ronald-pelton.jpg" alt="ronald-pelton">
+                      <div class="professional-content">
+                         <h4 class="text-white">Ronald Pelton</h4>
+                         <p class="text-white">Founder</p>
+                      </div>
+                   </div>
+                </div>
+                <div class="professional-item col-12 col-lg-3 col-md-6 ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                   data-wow-duration="1s" data-wow-delay=".2s">
+                   <div class="professional-box-wrap">
+                      <img src="{% static 'img/ethan-dashwood.jpg" alt="ethan-dashwood">
+                      <div class="professional-content">
+                         <h4 class="text-white">Ethan Dashwood </h4>
+                         <p class="text-white">CEO</p>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6  pt-3 pt-md-0 ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                   data-wow-duration="1s" data-wow-delay=".3s">
+                   <div class="professional-box-wrap">
+                      <img src="{% static 'img/torsten-schulze.jpg" alt="torsten-schulze">
+                      <div class="professional-content">
+                         <h4 class="text-white">Torsten Schulze</h4>
+                         <p class="text-white">Co-Founder</p>
+                      </div>
+                   </div>
+                </div>
+                <div class="professional-item col-12 col-lg-3 col-md-6  ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                   data-wow-duration="1s" data-wow-delay=".4s">
+                   <div class="professional-box-wrap">
+                      <img src="{% static 'img/paulo-costa.jpg" alt="paulo-costa">
+                      <div class="professional-content">
+                         <h4 class="text-white">Paulo Costa </h4>
+                         <p class="text-white">General Manager</p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section> -->
+    <!-- End Our Professional Section -->
+
+    <!-- Start Services Section -->
+    <section class="services-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h6 class="mb-3 text-center wow slideInLeft"></h6>
+                <h2 class="text-center mb-3 wow slideInRight color-primary">Get an estimate for your home </h2>
+                <p class="text-center color-secondary mb-20">Calculate the cost of doing up your home interiors now.</p>
+                <span class="about-divider"></span>
+                <div class="section-box d-flex flex-wrap justify-content-center pt-40 ps-0 pe-0">
+
+                    <div class="col-lg-4 col-md-6 col-12 pe-0 ps-md-3 pe-md-3 wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="card bg-self-primary">
+                            <div class="card-title-wrap d-flex align-items-center service-icon">
+                                <img src="{% static 'img/services/1.png' %}" class="w-50" alt="Modular Kitchen" />
+                            </div>
+                            <div class="card-body mt-20 p-0">
+                                <h4 class="mb-3 text-center color-white">Modular Kitchen</h4>
+                                <span class="card-divider mb-3"></span>
+                                <div class="card-list d-flex flex-column">
+                                    <span class="color-white text-center">
+                                        Elevate your culinary space with our Modular Kitchen service, seamlessly
+                                        blending
+                                        contemporary design and functionality. Experience a harmonious kitchen ambiance
+                                        tailored to meet your lifestyle and aesthetic preferences.</span>
+                                </div>
+                            </div>
+                            <div class="btn-center">
+                                <a href="contact" class="btn bg-self-white color-primary">Get Quotation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 pe-0 ps-md-3 pe-md-3 wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="card bg-self-white">
+                            <div class="card-title-wrap d-flex align-items-center service-icon color-primary">
+                                <img src="{% static 'img/services/2.png' %}" class="w-50" alt="Home interior" />
+                            </div>
+                            <div class="card-body mt-20 p-0">
+                                <h4 class="mb-3 text-center color-primary">Full Home Interior</h4>
+                                <span class="card-divider mb-3"></span>
+                                <div class="card-list d-flex flex-column">
+                                    <span class="color-primary text-center">
+                                        Transform your entire home into a personalized haven with our Full Home Interior
+                                        service. Every detail is curated for an immersive living experience. From
+                                        conceptualization to execution, we create cohesive and stylish interiors.</span>
+                                </div>
+                            </div>
+                            <div class="btn-center">
+                                <a href="contact" class="btn bg-self-primary color-white">Get Quotation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 pe-0 ps-md-3 pe-md-3 wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="card bg-self-primary">
+                            <div class="card-title-wrap d-flex align-items-center service-icon">
+                                <img src="{% static 'img/services/3.png' %}" class="w-50" alt="Living room" />
+                            </div>
+                            <div class="card-body mt-20 p-0">
+                                <h4 class="mb-3 text-center color-white">Living Room</h4>
+                                <span class="card-divider mb-3"></span>
+                                <div class="card-list d-flex flex-column">
+                                    <span class="color-white text-center">
+                                        Redesign your living space into a haven of comfort and style with our Living
+                                        Room
+                                        Interior service. Our expert touch blends functionality and aesthetics, creating
+                                        a
+                                        welcoming ambiance that suits your lifestyle seamlessly.</span>
+                                </div>
+                            </div>
+                            <div class="btn-center">
+                                <a href="contact" class="btn bg-self-white color-primary">Get Quotation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center pt-50 ps-0 pe-0">
+                    <a href="services" class="btn">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start Blog Section -->
+    <!-- <section class="blog-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h6 class="mb-3 text-center wow slideInLeft">[ Our Blog ]</h6>
+                <h2 class="text-center mb-3 wow slideInRight color-secondary">Read Our Latest News</h2>
+                <span class="about-divider wow zoomIn"></span>
+                <div class="blog-wrap pt-40 ps-0 pe-0 d-flex flex-column flex-md-row">
+                    <div class="col-md-4 col-12 ps-md-2 pe-md-2 ps-0 pe-0">
+                        <div class="card align-content-center">
+                            <img src="{% static 'img/apartment-renovation-blog.jpg' %}" class="card-img-top mb-20 rounded-0"
+                                alt="apartment-renovation-blog">
+                            <div class="card-body p-0">
+                                <h4 class="card-title">Donec ultrices tincidunt </h4>
+                                <p class="card-text mb-3">Egestas tellus rutrum tellus pellentesque. Eu augue ut lectus
+                                    arcu
+                                </p>
+                                <a href="single-blog.html" class="btn-primary blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 ps-md-2 pe-md-2 ps-0 pe-0 pt-3 pt-md-0">
+                        <div class="card align-content-center">
+                            <img src="{% static 'img/architecture-home-image.jpg' %}" class="card-img-top mb-20 rounded-0"
+                                alt="architecture-home-image">
+                            <div class="card-body p-0">
+                                <h4 class="card-title">Non blandit massa enim</h4>
+                                <p class="card-text mb-3">Sed tempus urna et pharetra pharetra massa massa ultricies.
+                                </p>
+                                <a href="single-blog.html" class="btn-primary blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 ps-md-2 pe-md-2 ps-0 pe-0 pt-3 pt-md-0">
+                        <div class="card align-content-center">
+                            <img src="{% static 'img/best-living-room-image.jpg' %}" class="card-img-top mb-20 rounded-0"
+                                alt="best-living-room-image.jpg">
+                            <div class="card-body p-0">
+                                <h4 class="card-title">Ut faucibus pulvinar</h4>
+                                <p class="card-text mb-3">Penatibus et magnis dis parturient montes. Proin fermentum leo
+                                    vel
+                                </p>
+                                <a href="single-blog.html" class="btn-primary blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Blog Section -->
+
+    <!-- Start Testimonial Section -->
+    <section class="testimonials-wrap pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h6 class="mb-3 text-center wow zoomIn">[ Testimonial ]</h6>
+                <h2 class="text-center mb-3  wow zoomIn color-secondary">What People Says?</h2>
+                <span class="about-divider  wow zoomIn"></span>
+                <div class="testimonials-slider pt-40 d-flex flex-column flex-md-row justify-content-around ps-0 pe-0">
+                    <div class="testimonial-image col-lg-6 col-md-6 col-12 d-flex align-items-center wow slideInLeft">
+                        <img src="{% static 'img/people-images.png' %}" alt="people-images">
+                    </div>
+                    <div class="testimonial-wrapper col-lg-5 col-md-6 col-12 wow slideInRight">
+                        <div class="testimonial-slide">
+                            <p> "I am extremely satisfied with the interior design services provided by Myspace. They
+                                transformed my space into a beautiful and functional environment. The attention to
+                                detail and
+                                creative approach exceeded my expectations. Highly recommended!"</p>
+                            <div class="testimonial-slide-wrap d-flex align-content-start justify-content-start">
+                                <!-- <img src="{% static 'img/silverster-scott-image.png' %}" alt="silverster-scott-image"> -->
+                                <div class="testimonial-text d-flex justify-content-center flex-column">
+                                    <h5 class="mb-0 text-black">Nagendhar Reddy</h5>
+                                    <span class="text-black">Interior Design
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p> "Myspace brought life and personality to my home through their outstanding interior
+                                designing services. The team's creativity and ability to capture my vision made the
+                                entire
+                                process enjoyable. Thank you, Myspace, for enhancing the beauty of my living space!"</p>
+                            <div class="testimonial-slide-wrap d-flex align-content-start justify-content-start">
+                                <div class="testimonial-text d-flex justify-content-center flex-column">
+                                    <h5 class="mb-0 text-black">Nandamuri Mohana Krishan </h5>
+                                    <span class="text-black">Interior Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p> Immersing life and character into my home, MySpace's exceptional interior design
+                                services
+                                exceeded my expectations. The team's creativity and adeptness in translating my vision
+                                into
+                                reality made the entire journey delightful. Grateful to MySpace for elevating the charm
+                                of my
+                                living space!"
+                            </p>
+                            <div class="testimonial-slide-wrap d-flex align-content-start justify-content-start">
+                                <div class="testimonial-text d-flex justify-content-center flex-column">
+                                    <h5 class="mb-0 text-black">Chandrashekar Rao</h5>
+                                    <span class="text-black">Interior Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Section -->
+    <!-- Start Touch Section -->
+    <section class="touch-section pt-80 pb-80 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row">
+                <div class=" touch-text col-md-9  col-12 p-0 ">
+                    <h3 class="text-white pb-10 text-center text-md-start wow slideInLeft">Get Incredible Interior
+                        Design
+                        Right Now!</h3>
+                    <p class="text-white text-center text-md-start wow slideInLeft">Unleash Style, Elevate Comfort: Your
+                        Incredible Interior Awaits – Transform Your Space Today!</p>
+                </div>
+                <div
+                    class="touch-btn col-md-3 col-12 d-flex align-items-center justify-content-center justify-content-md-end p-0 pt-3 pt-md-0 wow slideInRight">
+                    <a href="contact" class="btn"> Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Touch Section -->
+
+    <!-- Start  Contact Us  Section -->
+    <section class="contact-section pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row">
+                <h6 class="mb-3 text-start ps-0 pe-0">[ Contact Us ]</h6>
+                <h2 class="text-start mb-3 ps-0 pe-0 color-secondary">Let's Start New Project</h2>
+                <span class="about-divider"></span>
+                <p class="ps-0 pe-0">Ready to transform your space? Reach out to us for personalized consultations and
+                    expert interior solutions. Let's embark on a journey to redefine your surroundings together!</p>
+                <div class="d-flex flex-column flex-md-row pt-40 ps-0 pe-0">
+                    <div class="col-md-6 col-12 icon-box-wrapper ps-md-0 pe-md-3 ps-0 pe-0">
+                        <div class="icon-box-item d-flex col-12">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="icon-box-text d-flex flex-column align-items-start justify-content-center">
+                                <h5>Location</h5>
+                                <a href="https://maps.app.goo.gl/BE8mjm8UcMoTUjnL6" target="_blank"
+                                    class="color-primary">A-49,Ashirwad Building,Begumpet, Hyderabad </a>
+                            </div>
+                        </div>
+                        <div class="icon-box-item d-flex col-12 mt-4">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="icon-box-text d-flex flex-column align-items-start justify-content-center">
+                                <h5>Phone Number</h5>
+                                <span>Call Now: </span>
+                                <a href="tel:+919618567000" class="color-primary"> +91 9618567000
+                                </a>
+                                <a href="tel:+919642567000 " class="color-primary"> +91 9642567000
+                                </a>
+                            </div>
+                        </div>
+                        <div class="icon-box-item d-flex col-12 mt-4">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="icon-box-text d-flex flex-column align-items-start justify-content-center">
+                                <h5>Email Us</h5>
+                                <a href="mailto:info@myspaceconstructions.com"
+                                    class="text-black color-primary">info@myspaceconstructions.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 contact-form-wrap ps-0 pe-0 pt-3 pt-md-0">
+                        <h4 class="text-black pb-20 color-secondary">Please Fill the Form</h4>
+                        <form action="https://formspree.io/f/xyyvppvv" method="post" class="contact-form col-12"
+                            id="contact-form">
+                            <div class="form-row">
+                                <div class="form-row d-flex flex-column flex-lg-row">
+                                    <div class="form-group col-lg-6 col-12 pe-0 pe-lg-2">
+                                        <input type="text" class="form-control" name="Full Name" placeholder="Full Name"
+                                            required>
+                                    </div>
+                                    <div class="form-group col-lg-6 col-12 pe-0 pe-lg-2">
+                                        <input type="email" class="form-control" name="Email"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="form-row col-lg-12">
+                                    <div class="form-group ">
+                                        <input type="tel" class="form-control" name="tel" placeholder="Phone Number"
+                                            required>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea class="form-control" placeholder="Message Here" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group text-start col-12">
+                                    <button class="btn  w-100" type="submit">Submit</button>
+                                </div>
+                            </div>
+                            <p id="contact-form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End  Contact Us  Section -->
+</main>
+
+{% endblock %}

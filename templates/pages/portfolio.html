@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+    <!-- Start Hero section -->
+    <section class="about-hero-section ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="text-white mb-10">Portfolio</h1>
+                <div class="title-border"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start Portfolio Section -->
+    <section class="portfolio-section portfolio-section-wrap d-flex flex-wrap pt-100 pb-100 ps-3 pe-3 ps-md-0 pe-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".1s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/1.png' %}" data-fancybox="gallery">
+                            <span>TV Column</span>
+                            <img src="{% static 'img/portfolio/1.png' %}" alt="portfolio-exterior-design">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 pt-md-0 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/3.png' %}" data-fancybox="gallery">
+                            <span>Modern Furniture</span>
+                            <img src="{% static 'img/portfolio/3.png' %}" alt="modern-furniture">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 pt-md-3 pt-lg-0 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/5.png' %}" data-fancybox="gallery">
+                            <span>Luxury Villa</span>
+                            <img src="{% static 'img/portfolio/5.png' %}" alt="luxury-villa" class="p-0">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/4.png' %}" data-fancybox="gallery">
+                            <span>Creative Space</span>
+                            <img src="{% static 'img/portfolio/4.png' %}" alt="creative" class="p-0">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/6.png' %}" data-fancybox="gallery">
+                            <span>Fantastic Interior</span>
+                            <img src="{% static 'img/portfolio/6.png' %}" alt="creative" class="p-0">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".6s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/7.png' %}" data-fancybox="gallery">
+                            <span>Modular Kitchen</span>
+                            <img src="{% static 'img/portfolio/7.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".6s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/8.png' %}" data-fancybox="gallery">
+                            <span>Specious Wodrobe</span>
+                            <img src="{% static 'img/portfolio/8.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".6s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/9.png' %}" data-fancybox="gallery">
+                            <span>Specious Wodrobe</span>
+                            <img src="{% static 'img/portfolio/9.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-box-wrap col-12 col-md-6 col-lg-4 ps-0 pe-0 ps-md-2 pe-md-2 pt-3 wow slideInUp"
+                    data-wow-duration="1s" data-wow-delay=".6s">
+                    <div class="popup">
+                        <a href="{% static 'img/portfolio/10.png' %}" data-fancybox="gallery">
+                            <span>Spacious Corridor </span>
+                            <img src="{% static 'img/portfolio/10.png' %}" alt="apartment-renovation">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+</main>
+
+{% endblock %}
