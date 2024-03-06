@@ -1,0 +1,261 @@
+/*================ 
+Template Name: MySpace
+Description:  Architecture and Interior Designer Page HTML Template
+Version: 1.0 
+Author: https://www.templatemonster.com/authors/techeshta
+=======================*/
+
+
+/************************ 
+    @media 1280px
+*************************/
+@media (max-width: 1280px) {
+}
+/************************ 
+    @media 1024px
+*************************/
+@media (max-width: 1024px) {
+    h1{
+        font-size: 42px;
+        line-height: 52px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    /* .hero-section{
+        height: 700px;
+    } */
+    .hero-section .hero-content h1,
+    .hero-section .hero-content p,
+    .skill-section .skill-content p,
+    .process-section .process-box .process-box-wrap p,
+    .about-section-wrap .about-content h2,
+    .about-section .about-content p{
+        width: 100%;
+    }
+    .hero-section .hero-image .hero-section-image,  .about-img .exterior-design ,.skill-image img{
+        
+        width: 100%;
+    }
+    .skill-image span{
+        bottom: 22px;
+        left: 25px;
+    }
+    .portfolio-box-wrap .popup img,
+    .portfolio-box-wrap .popup span{
+        height: 300px;
+    }
+    .portfolio-section-wrap .portfolio-box-wrap .popup span, .portfolio-section-wrap .portfolio-box-wrap .popup img{
+        height: 250px;
+    }
+    
+}
+
+/************************ 
+    @media 991px
+*************************/
+@media (max-width: 991px) {
+    h1{
+        font-size: 38px;
+        line-height: 46px;
+    }
+    h2{
+        font-size: 34px;
+        line-height: 44px;
+    }
+    
+    h3{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .pt-100 {
+        padding-top: 70px;
+    }
+    .pb-100 {
+        padding-bottom: 70px;
+    }
+    .main-inner .navbar-expand-lg .navbar-nav .nav-item .nav-link{
+        padding-top: 20px;
+        margin: 0px 0px;
+    }
+    /* .hero-section{
+        height: 650px;
+    } */
+    .main-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+        
+    }
+    .hero-section .hero-image .hero-section-image{
+        width: 100%;
+    }
+    .hero-section .emoji-wrap img{
+        margin-top: -130px;
+    }
+    .hero-section .hero-content h1,.hero-section .hero-content p,.contact-section p,.coming-hero-text p{
+        width: 100%;
+    }
+    .about-section .about-content p{
+        width: 100%;
+    }
+    .about-section .about-img .fantastic-lnterior{
+        margin-top: -100px;
+        max-width: 40%;
+    }
+    .about-section .about-img .exterior-design{
+        width: 100%;
+    }
+    .counter-section-text h2, .counter-section-text span{
+        font-size: 55px;
+        line-height: 66px;
+    }
+    .testimonials-wrap .testimonial-wrapper{
+        padding: 20px;
+    }
+    .icon-box-wrapper  .icon-box-item i{
+        height: 65px;
+        width: 66px;
+    }
+    .about-section-wrap .about-img img{
+        width: 100%;
+    }
+    .about-section-wrap .about-img span {
+        bottom: 109px;
+        left: 35px;
+    }
+    .touch-contact-section .contact-form-wrap{
+        padding: 20px;
+    }
+    .touch-contact-section .icon-box-wrapper .icon-box-item {
+        width: 90%;
+    }
+    .icon-box-wrapper  .icon-box-item i {
+        height: 50px;
+        width: 57px;
+        font-size: 24px;
+    }
+    .coming-hero-title{
+        font-size: 70px;
+        line-height: 80px;
+    }
+}
+
+/************************ 
+    @media 540px
+*************************/
+@media (max-width: 540px) {
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    .pt-80{
+        padding-top: 40px;
+    }
+    .pb-80{
+        padding-bottom: 40px;
+    }
+    .pt-50{
+        padding-top: 30px;
+    }
+    .pt-40{
+        padding-top: 30px;
+    }
+    .top-bar .social-icon{
+        display: none;
+    }
+    /* .hero-section{
+        height: 950px;
+    } */
+    .hero-section .hero-image .hero-section-image{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .skill-image span{
+        display: none;
+    }
+    .counter-section-text h2, .counter-section-text span{
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .portfolio-box-wrap .popup img,
+    .portfolio-box-wrap .popup span{
+        height: 180px;
+    }
+    .professional-section .professional-box .professional-item{
+        padding-top: 16px;
+    }
+    .about-section-wrap .about-img span {
+        bottom: 17px;
+        left: 6px;
+    }
+    .touch-contact-section .icon-box-wrapper .icon-box-item ,.error-section .error-content p {
+        width: 100%;
+    }
+    .icon-box-wrapper  .icon-box-item i {
+        height: 53px;
+        width: 55px;
+        font-size: 24px;
+    }
+    .error-content h1{
+        font-size: 150px;
+        line-height: 150px;
+    }
+}
+
+/************************ 
+    @media 480px
+*************************/
+@media (max-width: 480px) {
+    h1{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .hero-section .hero-image .hero-section-image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero-section .hero-content p{
+        width: 100%;
+    }
+    .hero-section .emoji-wrap img{
+        margin-left: -11px;
+    }
+    .testimonials-wrap  .testimonial-wrapper{
+        margin-top: 20px;
+    }
+    .portfolio-section-wrap .portfolio-box-wrap .popup span, 
+    .portfolio-section-wrap .portfolio-box-wrap .popup img {
+        height: 330px;
+    }
+    .coming-hero-title {
+        font-size: 58px;
+        line-height: 68px;
+    }
+    .coming-hero-text .contact-form .btn {
+        border-radius: 0px;
+        width: 200px;
+        margin-top: 20px;
+    }
+ 
+}
+/************************ 
+    @media 375px
+*************************/
+@media (max-width: 375px) {
+    .portfolio-box-wrap .popup img,.portfolio-box-wrap .popup span{
+        height: 150px;
+    }
+    .portfolio-box-wrap .popup span{
+        padding: 10px;
+    }
+}
